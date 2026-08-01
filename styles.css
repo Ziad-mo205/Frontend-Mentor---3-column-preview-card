@@ -17,6 +17,8 @@ body {
     -webkit-font-smoothing: antialiased;
     font-size: 0.9375rem;
     background-color: hsl(0, 0%, 95%);
+    display: flex;
+    flex-direction: column;
 }
 
 img, picture, video, canvas, svg {
@@ -44,9 +46,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 main {
-    width: min(90%, 40rem);
+    width: min(90%, 50rem);
     height: auto;
-    margin: 4rem auto;
+    margin: 5rem auto;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 .sedans {
@@ -59,4 +63,98 @@ main {
 
 .luxury {
     background-color: hsl(179, 100%, 13%);
+}
+
+section {
+    padding: 2.5rem;
+    padding-inline-end: 4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders', sans-serif;
+    font-weight: 400;
+    margin-block-end: 1rem;
+}
+
+img {
+    width: 3.5rem;
+    margin-block-end: 1.5rem;
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.8rem;
+    margin-block-end: 1.3rem;
+}
+
+.sedans button {
+    color: hsl(31, 77%, 52%);
+}
+.sedans button:hover {
+    background-color: hsl(31, 100%, 31%);
+    color: white;
+    border: 2px solid white;
+}
+
+.suvs button {
+    color: hsl(184, 100%, 22%);
+}
+.suvs button:hover {
+    background-color: hsl(184, 100%, 12%);
+    color: white;
+    border: 2px solid white;
+}
+
+.luxury button {
+    color: hsl(179, 100%, 13%);
+}
+.luxury button:hover {
+    background-color: hsl(180, 100%, 8%);
+    color: white;
+    border: 2px solid white;
+}
+
+.card-button {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.8rem;
+    height: 2.5rem;
+    width: 7.5rem;
+    border-radius: 100vmax;
+    border: none;
+    cursor: pointer;
+    margin-block-start: auto;
+}
+.card-button:active, button.card-button:active {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+
+}
+
+.attribution {
+    border-block-start: 1px solid black;
+    padding-block: 2rem 1rem;
+    text-align: center;
+    background-color: hsl(184, 30%, 92%);
+    margin-block-start: auto;
+}
+.attribution p {
+    color: hsl(184, 100%, 15%);
+    font-size: 1rem;
+    line-height: 1;
+}
+
+@media (min-width: 715px) {
+    main {
+        display: flex;
+        margin-block-end: 11.6rem;
+    }
+
+    p {
+        margin-block-end: 6rem;
+    }
 }
