@@ -151,10 +151,10 @@ p {
 @media (min-width: 715px) {
     main {
         display: flex;
-        margin-block-end: 11.6rem;
+        margin-block-end: 14.5rem;
     }
 
-    p {
+    section p {
         margin-block-end: 6rem;
     }
 }
